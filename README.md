@@ -5,7 +5,6 @@
 
 <button type = "button" onclick="location.reload();">Try Again</button>
 
-
 <script>
 
 var number = Math.floor(Math.random() * 10);
