@@ -3,7 +3,7 @@
 <html>
 <body>
 
-<button type = "button" onclick="location.reload();">T</button>
+<button type = "button" onclick="location.reload();">Try Again</button>
 
 <script>
 
