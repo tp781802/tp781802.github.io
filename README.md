@@ -3,9 +3,6 @@
 <html>
 <body>
 
-<img src="">
-
-
 <button type = "button" onclick="location.reload();">Try Again</button>
 
 
