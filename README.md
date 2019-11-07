@@ -7,7 +7,7 @@
 </center>
 
 <center>
-<button type = "button" onclick="window.location.href = 'guess.html';">Guessing Game</button>
+<button type = "button" onclick="window.location.href = 'guess.github.io';">Guessing Game</button>
 <button type = 'button' onclick="window.location.href = ';">Button</button>
 </center>
 
