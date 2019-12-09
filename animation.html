@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="1000" height="725"
+style="border:1px solid #ffffff">
+</canvas>
+
+<button style='background-color:white;border-color:black;height:50px;width:150px;font-size:1em' type = "button" onclick="grow();">Grow</button>
+<button style='background-color:white;border-color:black;height:50px;width:150px;font-size:1em' type = "button" onclick="location.reload();">Reset</button>
+<button style='background-color:white;border-color:black;height:50px;width:200px;font-size:1em' type = "button" onclick="window.location.href = 'website.html';">Back to Home</button>
+
+<script>
+var bodyRadius = 150
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+var dataURL = canvas.toDataURL();
+var animation = 0
+var bar1 = 0
+
+function grow() {
+  setTimeout(function(){grow1();}, 1000)
+  setTimeout(function(){growTwo();}, 1000)
+}
+
+function growTwo() {
+  setTimeout(function(){grow2();}, 1000)
+  setTimeout(function(){growThree();}, 1000)
+}
+
+function growThree() {
+  setTimeout(function(){grow3();}, 1000)
+  setTimeout(function(){growFour();}, 1000)
+}
+function growFour() {
+  setTimeout(function(){grow4();}, 1000)
+  setTimeout(function(){growFive();}, 1000)
+}
+
+function growFive() {
+  setTimeout(function(){grow5();}, 1000)
+  setTimeout(function(){growSix();}, 1000)
+}
+
+function growSix() {
+  setTimeout(function(){grow6();}, 2000)
+  setTimeout(function(){growSeven();}, 1000)
+}
+
+function growSeven() {
+  setTimeout(function(){grow7();}, 1000)
+  setTimeout(function(){growEight();}, 1000)
+}
+
+function growEight() {
+  setTimeout(function(){grow8();}, 1000)
+  setTimeout(function(){growNine();}, 1000)
+}
+
+function growNine() {
+  setTimeout(function(){grow9();}, 1000)
+  setTimeout(function(){growTen();}, 1000)
+}
+
+function growTen() {
+  setTimeout(function(){grow10();}, 1000)
+  setTimeout(function(){growEleven();}, 1000)
+}
+
+function growEleven() {
+  setTimeout(function(){grow11();}, 1000)
+  setTimeout(function(){growTwelve();}, 1000)
+}
+
+function growTwelve() {
+  setTimeout(function(){grow12();}, 1000)
+  setTimeout(function(){growThirteen();}, 1000)
+}
+
+function growThirteen() {
+  setTimeout(function(){grow13();}, 1000)
+  setTimeout(function(){growFourteen();}, 1000)
+}
+
+function growFourteen() {
+  setTimeout(function(){grow14();}, 1000)
+  setTimeout(function(){growFifteen();}, 1000)
+}
+
+function growFifteen() {
+  setTimeout(function(){grow15();}, 1000)
+  setTimeout(function(){growSixteen();}, 1000)
+}
+
+function growSixteen() {
+  setTimeout(function(){grow16();}, 1000)
+  //setTimeout(function(){growSeventeen();}, 1000)
+}
+
+
+
+function draw1() {
+  //left arm
+  ctx.strokeRect(150, 265, 150, 40);
+  ctx.fillRect(150, 265, 150, 40);
+  //right arm
+  ctx.fillStyle = '#ffea75'
+  ctx.strokeRect(700, 265, 150, 40);
+  ctx.fillRect(700, 265, 150, 40);
+  //left sleeve
+  ctx.fillStyle = "#fa1919";
+  ctx.strokeRect(300, 260, 150, 50);
+  ctx.fillRect(300, 260, 150, 50);
+  //right sleeve
+  ctx.fillStyle = '#fa1919';
+  ctx.strokeRect(550, 260, 150, 50);
+  ctx.fillRect(550, 260, 150, 50);
+  //left shoe
+  ctx.fillStyle = '#2b2b2b';
+  ctx.strokeRect(400, 700, 100, 25);
+  ctx.fillRect(400, 700, 100, 25);
+  //right shoe
+  ctx.fillStyle = '#2b2b2b';
+  ctx.fillRect(500, 700, 100, 25);
+  ctx.fillRect(500, 700, 100, 25);
+  //left leg
+  ctx.fillStyle = '#0097e8';
+  ctx.strokeRect(425, 500, 75, 200);
+  ctx.fillRect(425, 500, 75, 200);
+  // right leg
+  ctx.fillStyle = '#0097e8';
+  ctx.strokeRect(500, 500, 75, 200);
+  ctx. fillRect(500, 500, 75, 200);
+}
+
+function draw2() {
+  //head
+  ctx.beginPath();
+  ctx.fillStyle = '#ffea75'
+  ctx.arc(500, 150, 100, 0, 2 * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+  ctx.closePath()
+  //left eye
+  ctx.beginPath();
+  ctx.strokeStyle = 'red'
+  ctx.moveTo(450, 125);
+  ctx.lineTo(475, 140);
+  ctx.stroke();
+  ctx.closePath();
+  //right eye
+  ctx.beginPath();
+  ctx.moveTo(525, 140);
+  ctx.lineTo(550, 125);
+  ctx.stroke();
+  ctx.closePath();
+  //mouth
+  ctx.beginPath();
+  ctx.strokeStyle = 'black'
+  ctx.moveTo(450, 200);
+  ctx.lineTo(550, 200);
+  ctx.stroke();
+  ctx.closePath();
+  ctx.beginPath();
+  ctx.moveTo(450, 200);
+  ctx.lineTo(450, 210);
+  ctx.stroke();
+  ctx.closePath();
+  ctx.beginPath();
+  ctx.moveTo(550, 200);
+  ctx.lineTo(550, 210);
+  ctx.stroke();
+  ctx.closePath();
+}
+
+//left arm
+ctx.fillStyle = '#ffea75'
+ctx.strokeRect(150, 265, 150, 40);
+ctx.fillRect(150, 265, 150, 40);
+//right arm
+ctx.fillStyle = '#ffea75'
+ctx.strokeRect(700, 265, 150, 40);
+ctx.fillRect(700, 265, 150, 40);
+//left sleeve
+ctx.fillStyle = "#fa1919";
+ctx.strokeRect(300, 260, 150, 50);
+ctx.fillRect(300, 260, 150, 50);
+//right sleeve
+ctx.fillStyle = '#fa1919';
+ctx.strokeRect(550, 260, 150, 50);
+ctx.fillRect(550, 260, 150, 50);
+//left shoe
+ctx.fillStyle = '#2b2b2b';
+ctx.strokeRect(400, 700, 100, 25);
+ctx.fillRect(400, 700, 100, 25);
+//right shoe
+ctx.fillStyle = '#2b2b2b';
+ctx.fillRect(500, 700, 100, 25);
+ctx.fillRect(500, 700, 100, 25);
+//left leg
+ctx.fillStyle = '#0097e8';
+ctx.strokeRect(425, 500, 75, 200);
+ctx.fillRect(425, 500, 75, 200);
+// right leg
+ctx.fillStyle = '#0097e8';
+ctx.strokeRect(500, 500, 75, 200);
+ctx. fillRect(500, 500, 75, 200);
+//body
+ctx.beginPath();
+ctx.fillStyle = '#fa1919'
+ctx.arc(500, 400, 150, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fill();
+ctx.closePath();
+//head
+ctx.beginPath();
+ctx.fillStyle = '#ffea75'
+ctx.arc(500, 150, 100, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fill();
+ctx.closePath()
+//left eye
+ctx.beginPath();
+ctx.moveTo(450, 125);
+ctx.lineTo(475, 125);
+ctx.stroke();
+ctx.closePath();
+//right eye
+ctx.beginPath();
+ctx.moveTo(525, 125);
+ctx.lineTo(550, 125);
+ctx.stroke();
+ctx.closePath();
+//mouth
+ctx.beginPath();
+ctx.moveTo(450, 200);
+ctx.lineTo(550, 200);
+ctx.stroke();
+ctx.closePath();
+ctx.beginPath();
+ctx.moveTo(450, 200);
+ctx.lineTo(450, 190);
+ctx.stroke();
+ctx.closePath();
+ctx.beginPath();
+ctx.moveTo(550, 200);
+ctx.lineTo(550, 190);
+ctx.stroke();
+ctx.closePath();
+
+function grow1() {
+  draw1()
+  //body
+  ctx.beginPath();
+  ctx.fillStyle = '#fa1919'
+  ctx.arc(500, 400, 160, 0, 2 * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+  ctx.closePath();
+  draw2()
+}
+
+function grow2() {
+  draw1()
+  //body
+  ctx.beginPath();
+  ctx.fillStyle = '#fa1919'
+  ctx.arc(500, 400, 170, 0, 2 * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+  ctx.closePath();
+  draw2()
+}
+
+function grow3() {
+  draw1()
+  //body
+  ctx.beginPath();
+  ctx.fillStyle = '#fa1919'
+  ctx.arc(500, 400, 170, 0, 2 * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+  ctx.closePath();
+  draw2()
+}
+
+function grow4() {
+  draw1()
+  //body
+  ctx.beginPath();
+  ctx.fillStyle = '#fa1919'
+  ctx.arc(500, 400, 180, 0, 2 * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+  ctx.closePath();
+  draw2()
+}
+
+function grow5() {
+  draw1()
+  //body
+  ctx.beginPath();
+  ctx.fillStyle = '#fa1919'
+  ctx.arc(500, 400, 190, 0, 2 * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+  ctx.closePath();
+  draw2()
+}
+
+function grow6() {
+  draw1()
+  //body
+  ctx.beginPath();
+  ctx.fillStyle = '#fa1919'
+  ctx.arc(500, 400, 200, 0, 2 * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+  ctx.closePath();
+  draw2()
+}
+
+function grow7() {
+  draw1()
+  //body
+  ctx.beginPath();
+  ctx.fillStyle = '#fa1919'
+  ctx.arc(500, 400, 210, 0, 2 * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+  ctx.closePath();
+  draw2()
+}
+
+function grow8() {
+  draw1()
+  //body
+  ctx.beginPath();
+  ctx.fillStyle = '#fa1919'
+  ctx.arc(500, 400, 220, 0, 2 * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+  ctx.closePath();
+  draw2()
+}
+
+function grow9() {
+  draw1()
+  //body
+  ctx.beginPath();
+  ctx.fillStyle = '#fa1919'
+  ctx.arc(500, 400, 230, 0, 2 * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+  ctx.closePath();
+  draw2()
+}
+
+function grow10() {
+  draw1()
+  //body
+  ctx.beginPath();
+  ctx.fillStyle = '#fa1919'
+  ctx.arc(500, 400, 240, 0, 2 * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+  ctx.closePath();
+  draw2()
+}
+
+function grow11() {
+  draw1()
+  //body
+  ctx.beginPath();
+  ctx.fillStyle = '#fa1919'
+  ctx.arc(500, 400, 250, 0, 2 * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+  ctx.closePath();
+  draw2()
+}
+
+function grow12() {
+  draw1()
+  //body
+  ctx.beginPath();
+  ctx.fillStyle = '#fa1919'
+  ctx.arc(500, 400, 260, 0, 2 * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+  ctx.closePath();
+  draw2()
+}
+
+function grow13() {
+  draw1()
+  //body
+  ctx.beginPath();
+  ctx.fillStyle = '#fa1919'
+  ctx.arc(500, 400, 270, 0, 2 * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+  ctx.closePath();
+  draw2()
+}
+
+function grow14() {
+  draw1()
+  //body
+  ctx.beginPath();
+  ctx.fillStyle = '#fa1919'
+  ctx.arc(500, 400, 280, 0, 2 * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+  ctx.closePath();
+  draw2()
+}
+
+function grow15() {
+  draw1()
+  //body
+  ctx.beginPath();
+  ctx.fillStyle = '#fa1919'
+  ctx.arc(500, 400, 290, 0, 2 * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+  ctx.closePath();
+  draw2()
+}
+
+function grow16() {
+  draw1()
+  //body
+  ctx.beginPath();
+  ctx.fillStyle = '#fa1919'
+  ctx.arc(500, 400, 300, 0, 2 * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+  ctx.closePath();
+  draw2()
+}
+</script>
+  
+</body>
+</html>
