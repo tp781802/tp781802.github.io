@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html>
 <body>
 
 <style>
 body {
-	background-color: #FFFFFF;
+	background-color: #cfcfcf;
 }
 </style>
 
@@ -13,7 +14,9 @@ body {
 
 <center>
 <button style='background-color:white;border-color:black;height:50px;width:200px;font-size:1em' type = "button" onclick="window.location.href = 'guess.html';">Guessing Game</button>
-<button style='background-color:white;border-color:black;height:50px;width:200px;font-size:1em' type = 'button' onclick="window.location.href = 'https://www.youtube.com/watch?v=alf71vIYaik';">Recommended Video</button>
+<button style='background-color:white;border-color:black;height:50px;width:200px;font-size:1em' type = 'button' onclick="window.location.href = 'https://www.youtube.com/watch?v=alf71vIYaik;">Recommended Video</button>
+<button style='background-color:white;border-color:black;height:50px;width:200px;font-size:1em' type = 'button' onclick="window.location.href = 'canvas.html'">Recommended Video</button>
+<button style='background-color:white;border-color:black;height:50px;width:200px;font-size:1em' type = 'button' onclick="window.location.href = 'character.html'">Recommended Video</button>
 </center>
 
 </body>
